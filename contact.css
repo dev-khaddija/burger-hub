@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Navigation */
+nav{
+    background-color: #1b1b1b;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+nav .logo h1{
+    font-size: 32px;
+}
+
+nav .logo h1 span{
+    color: #ff6347;
+}
+
+/* Nav Links */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ff6347;
+}
+/* Contact Section Base Styling */
+.contact-section {
+    padding: 100px 8%;
+    background-color: #111; /* Returns to dark black for contrast against the About gray */
+}
+
+.contact-subtitle {
+    color: #ff6347;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* Automatically stacks columns on small screens */
+}
+
+/* Left Side Card: Info */
+.contact-info-card {
+    background-color: #1b1b1b;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #282828;
+    flex: 1;
+    min-width: 320px;
+}
+
+.contact-info-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-intro {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-icon {
+    font-size: 20px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+}
+
+.info-item h4 {
+    font-size: 16px;
+    color: #ff6347;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    color: #ccc;
+    font-size: 15px;
+}
+
+/* Right Side: Interactive Form */
+.contact-form {
+    flex: 12;
+    flex: 1.2; /* Gives the form slightly more horizontal layout space than the info card */
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #aaa;
+    letter-spacing: 0.5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    background-color: #1b1b1b;
+    border: 1px solid #282828;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Form Glow Focus Animations */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #ff6347;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.15);
+}
+
+/* Submit Button Custom Overrides */
+.contact-submit-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 35px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: flex-start; /* Keeps button from expanding to the full width of form */
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.2);
+}
+
+.contact-submit-btn:hover {
+    background-color: #e04e35;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 99, 71, 0.3);
+}
+
+/* Simple Site Footer Styling */
+.main-footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    border-top: 1px solid #1b1b1b;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Mobile Layout Scaling Tweak */
+@media (max-width: 768px) {
+    .contact-container {
+        gap: 35px;
+    }
+    .contact-info-card {
+        padding: 30px 20px;
+    }
+    .contact-submit-btn {
+        width: 100%; /* Makes button hit full width targets on mobile viewports */
+        text-align: center;
+    }
+}

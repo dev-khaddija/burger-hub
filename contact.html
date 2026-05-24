@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>BURGER <span>HUB</span></h1>
+        </div>
+    
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+    
+        <!-- Section Heading -->
+        <div class="section-heading">
+            <span class="contact-subtitle">GET IN TOUCH</span>
+            <h2>VISIT US OR <span>ORDER NOW</span></h2>
+            <p>Have a question, feedback, or a massive craving? Drop us a line below.</p>
+        </div>
+    
+        <!-- Contact Info & Form Wrapper -->
+        <div class="contact-container">
+    
+            <!-- Left Side: Practical Information -->
+            <div class="contact-info-card">
+                <h3>Contact Information</h3>
+                <p class="contact-intro">Stop by for a hot smash burger or reach out via phone/email for custom catering
+                    requests.</p>
+    
+                <div class="info-links-list">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>123 Flame Grill Avenue, Food District</p>
+                        </div>
+                    </div>
+    
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>+1 (555) 019-2831</p>
+                        </div>
+                    </div>
+    
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>hello@burgerhub.com</p>
+                        </div>
+                    </div>
+    
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <div>
+                            <h4>Operating Hours</h4>
+                            <p>Mon - Sun: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Side: Message Input Form -->
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <h3>Send a Message</h3>
+    
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="johndoe@example.com" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+                </div>
+    
+                <button type="submit" class="contact-submit-btn">SEND MESSAGE</button>
+            </form>
+    
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Burger Hub. All Rights Reserved. Made for burger lovers.</p>
+    </footer>
+</body>
+</html>

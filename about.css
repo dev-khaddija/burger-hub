@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Navigation */
+nav{
+    background-color: #1b1b1b;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+nav .logo h1{
+    font-size: 32px;
+}
+
+nav .logo h1 span{
+    color: #ff6347;
+}
+
+/* Nav Links */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ff6347;
+}
+
+
+
+About Section Base Styling */
+.about-section {
+    padding: 100px 8%;
+    background-color: #161616; /* Lighter shade of grey to break away from the black background */
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Space between the image and the text */
+    flex-wrap: wrap; /* Makes it stack beautifully on mobile */
+}
+
+/* Left Column: Image Box */
+.about-image-box {
+    flex: 1;
+    min-width: 320px;
+    position: relative;
+}
+
+.about-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #333;
+}
+
+/* Decorative established badge over the image */
+.about-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.2;
+    box-shadow: 0 8px 24px rgba(255, 99, 71, 0.3);
+}
+
+.about-badge span {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* Right Column: Text Content */
+.about-content {
+    flex: 1;
+    min-width: 320px;
+}
+
+.about-subtitle {
+    color: #ff6347;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-content h2 span {
+    color: #ff6347;
+}
+
+.about-lead {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-text {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Quick Features row inside the about column */
+.about-features {
+    display: flex;
+    gap: 30px;
+    border-top: 1px solid #333;
+    padding-top: 25px;
+}
+
+.about-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-icon {
+    font-size: 24px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-feature-item p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Mobile Responsiveness Adjustment */
+@media (max-width: 968px) {
+    .about-container {
+        gap: 40px;
+    }
+    .about-img {
+        height: 350px;
+    }
+    .about-content h2 {
+        font-size: 32px;
+    }
+    .about-badge {
+        right: 10px; /* Adjust badge placement so it stays on screen on mobile */
+    }
+}
